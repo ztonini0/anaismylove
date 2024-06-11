@@ -1,5 +1,7 @@
 import streamlit as st
+import requests
 from PIL import Image
+from io import BytesIO
 
 # Configurações da barra de navegação
 st.set_page_config(page_title="Recordações de um amor", layout="wide")
@@ -40,11 +42,11 @@ def show_gallery(name):
     # Exibição das fotos em colunas
     col1, col2, col3, col4 = st.columns(4)
 
-    for i, image_path in enumerate(images):
+    for i, image_url in enumerate(images):
         with col1 if i % 4 == 0 else col2 if i % 4 == 1 else col3 if i % 4 == 2 else col4:
-            image = Image.open(image_path)
+            response = requests.get(image_url)
+            image = Image.open(BytesIO(response.content))
             st.image(image, caption=captions[i], use_column_width=True)
-
 # Função para exibir o quiz
 def show_quiz():
     st.header("Quiz sobre Nós ❤️")
