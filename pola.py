@@ -17,7 +17,7 @@ def show_gallery(name):
     st.text('Cada Parte de Você, Sempre Comigo.')
     # Lista de imagens e legendas correspondentes
     images = [
-        "https://raw.githubusercontent.com/seu_usuario/seu_repositorio/main/pb1.png"
+        "https://raw.githubusercontent.com/ztonini0/anaismylove/main/pb1.png"
     ]  
     captions = [
         "Eu escolho você hoje, escolho você todos os dias e sempre vou escolher você.Eu amo você do jeitinho é. ❤️", 
