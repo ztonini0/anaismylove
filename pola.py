@@ -17,14 +17,7 @@ def show_gallery(name):
     st.text('Cada Parte de Você, Sempre Comigo.')
     # Lista de imagens e legendas correspondentes
     images = [
-        r"C:\Users\matheus.tonini\diaromantc\pb1.png",
-        r"C:\Users\matheus.tonini\diaromantc\pb2.png",
-        r"C:\Users\matheus.tonini\diaromantc\pb3.png",
-        r"C:\Users\matheus.tonini\diaromantc\pb4.png", # Nova imagem
-        r"C:\Users\matheus.tonini\diaromantc\pb6.png", # Nova imagem
-        r"C:\Users\matheus.tonini\diaromantc\pb5.png", # Nova imagem
-        r"C:\Users\matheus.tonini\diaromantc\pb8.png", # Nova imagem
-        r"C:\Users\matheus.tonini\diaromantc\pb7.png"  # Nova imagem
+        "https://raw.githubusercontent.com/seu_usuario/seu_repositorio/main/pb1.png"
     ]  
     captions = [
         "Eu escolho você hoje, escolho você todos os dias e sempre vou escolher você.Eu amo você do jeitinho é. ❤️", 
